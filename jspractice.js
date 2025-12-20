@@ -15,6 +15,12 @@ function showmessage(){
 }
 showmessage()
 
+/*a function can call both local variables (means the variable that is inside the function and only visible 
+inside a function) or an outer variable function has full acess to outside variable 
+it can modify it as well  */
+
+console.log("hello:")
+
 
 
 
