@@ -17,14 +17,34 @@ showmessage()
 
 /*a function can call both local variables (means the variable that is inside the function and only visible 
 inside a function) or an outer variable function has full acess to outside variable 
-it can modify it as well  */
+it can modify it as well  
 
-console.log("hello:")
+parameters:
+we can pass arbitriary data to function using parameters
 
+if only a single argument is given then it just shows undefined instead of error 
+*/
+function showMessage(from, text) { // parameters: from, text
+  console.log(from + ': ' + text);
+}
 
+showMessage('Ann', 'Hello!'); // Ann: Hello! (*)
+showMessage('Ann', "What's up?"); // Ann: What's up? (**)
 
+/*
+creating a function in some other way :
 
+const function-name = () => {
+    return value 
+    }
+export const instead of export default function name 
 
+this is done to some scenarios to reduce line of code as we can directly call the function 
+for anonymous function 
+example:
+ */
+<button onClick={() => console.log("hello duniya")}> click here    
+</button>
 
 
 
